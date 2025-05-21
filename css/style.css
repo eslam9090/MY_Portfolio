@@ -196,7 +196,6 @@ body {
 .menu__bottom i {
   padding: 0px;
   font-size: 0px;
-  
 }
 
 .left {
@@ -218,7 +217,7 @@ body {
 
 .Info__Home__Body {
   display: grid;
-  grid-template-columns: 60% 30%;
+  grid-template-columns: 80% 20%;
   gap: 100px;
   align-items: center;
 }
@@ -275,6 +274,8 @@ body {
 }
 
 .Info h2 {
+  display: flex;
+  gap: 10px;
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 20px;
@@ -282,7 +283,7 @@ body {
 }
 
 .Info p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 40px;
   color: var(--text-color);
   margin-bottom: 50px;
@@ -345,18 +346,17 @@ body {
     cursor: pointer;
     color: var(--text-color);
     font-size: 25px;
-}
-.icon__dark__light {
-  font-size: 20px;
+  }
+  .icon__dark__light {
+    font-size: 20px;
     position: absolute;
     right: 100%;
     top: 50px;
-  
+
     margin-right: 50px;
     cursor: pointer;
     color: var(--text-color);
-
-}
+  }
   .main__container {
     width: 80%;
   }
@@ -411,29 +411,27 @@ body {
   }
   .Info__Home__Body {
     grid-template-columns: repeat(1, 1fr) !important ;
-      grid-gap: 50px !important;
-      justify-content: center;
-
+    grid-gap: 50px !important;
+    justify-content: center;
   }
-  .Image__Protofolio img{
+  .Image__Protofolio img {
     width: 80%;
     height: 100%;
     margin-bottom: 100px;
   }
-  .Image__Protofolio{
+  .Image__Protofolio {
     display: block !important;
     text-align: center;
   }
-  .Image__Protofolio::before{
+  .Image__Protofolio::before {
     width: 0 !important;
     height: 0 !important;
     border: 0;
   }
-  .Image__Protofolio::after{
-    width: 0  !important;
+  .Image__Protofolio::after {
+    width: 0 !important;
     height: 0 !important;
     border: 0;
-
   }
 }
 
@@ -482,17 +480,17 @@ body {
     cursor: pointer;
     color: var(--text-color);
     font-size: 25px;
-}
-.icon__dark__light {
+  }
+  .icon__dark__light {
     font-size: 25px !important;
     position: absolute;
     right: 100%;
     top: 50px;
-  
+
     margin-right: 50px;
     cursor: pointer;
     color: var(--text-color);
-}
+  }
   .main__switcher__themes .colors {
     height: 42px;
   }
@@ -518,29 +516,27 @@ body {
   }
   .Info__Home__Body {
     grid-template-columns: repeat(1, 1fr) !important ;
-      grid-gap: 50px !important;
-      justify-content: center;
-
+    grid-gap: 50px !important;
+    justify-content: center;
   }
-  .Image__Protofolio img{
+  .Image__Protofolio img {
     width: 60%;
     height: 100%;
     margin-bottom: 100px;
   }
-  .Image__Protofolio{
+  .Image__Protofolio {
     display: block !important;
     text-align: center;
   }
-  .Image__Protofolio::before{
+  .Image__Protofolio::before {
     width: 0 !important;
     height: 0 !important;
     border: 0;
   }
-  .Image__Protofolio::after{
-    width: 0  !important;
+  .Image__Protofolio::after {
+    width: 0 !important;
     height: 0 !important;
     border: 0;
-
   }
 }
 
@@ -591,17 +587,17 @@ body {
     cursor: pointer;
     color: var(--text-color);
     font-size: 35px !important;
-}
-.icon__dark__light {
-  font-size: 35px !important;
+  }
+  .icon__dark__light {
+    font-size: 35px !important;
     position: absolute;
     right: 100%;
     top: 50px;
-  
+
     margin-right: 50px;
     cursor: pointer;
     color: var(--text-color);
-}
+  }
   .main__switcher__themes .colors {
     height: 42px;
   }
@@ -627,30 +623,27 @@ body {
   }
   .Info__Home__Body {
     grid-template-columns: repeat(1, 1fr) !important ;
-      grid-gap: 50px !important;
-      justify-content: center;
-
+    grid-gap: 50px !important;
+    justify-content: center;
   }
-  .Image__Protofolio img{
+  .Image__Protofolio img {
     width: 60%;
     height: 100%;
     margin-bottom: 100px;
- 
   }
-  .Image__Protofolio{
+  .Image__Protofolio {
     display: block !important;
     text-align: center;
   }
-  .Image__Protofolio::before{
+  .Image__Protofolio::before {
     width: 0 !important;
     height: 0 !important;
     border: 0;
   }
-  .Image__Protofolio::after{
-    width: 0  !important;
+  .Image__Protofolio::after {
+    width: 0 !important;
     height: 0 !important;
     border: 0;
-
   }
 }
 
@@ -700,18 +693,17 @@ body {
     cursor: pointer;
     color: var(--text-color);
     font-size: 37px !important;
-
-}
-.icon__dark__light {
-  font-size: 37px !important;
+  }
+  .icon__dark__light {
+    font-size: 37px !important;
     position: absolute;
     right: 100%;
     top: 50px;
-  
+
     margin-right: 50px;
     cursor: pointer;
     color: var(--text-color);
-}
+  }
   .main__switcher__themes .colors {
     height: 42px;
   }
@@ -735,24 +727,23 @@ body {
   .ul__menu li {
     margin-bottom: 40px;
   }
-  .Image__Protofolio img{
+  .Image__Protofolio img {
     width: 50%;
     height: 100%;
-    margin-bottom: 100px; 
+    margin-bottom: 100px;
   }
-  .Image__Protofolio{
+  .Image__Protofolio {
     display: block !important;
     text-align: center;
   }
-  .Image__Protofolio::before{
+  .Image__Protofolio::before {
     width: 0 !important;
     height: 0 !important;
     border: 0;
   }
-  .Image__Protofolio::after{
-    width: 0  !important;
+  .Image__Protofolio::after {
+    width: 0 !important;
     height: 0 !important;
     border: 0;
-
   }
 }
