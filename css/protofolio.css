@@ -73,123 +73,123 @@
   }
 }
 .img__scroll {
-  background-image: url(/images/1.png);
+  background-image: url(../images/1.png);
 }
 
 .portofolio___project__1:hover {
   background-position: bottom;
 }
 .img__scroll_1 {
-  background-image: url(/images/scroll\ 2.png);
+  background-image: url(../images/scroll\ 2.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_2 {
-  background-image: url(/images/apple.png);
+  background-image: url(../images/apple.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_3 {
-  background-image: url(/images/Phone.png);
+  background-image: url(../images/Phone.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .img__scroll_5 {
-  background-image: url(/images/task.png);
+  background-image: url(../images/task.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_6 {
-  background-image: url(/images/local\ storage.png);
+  background-image: url(../images/local\ storage.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_7 {
-  background-image: url(/images/to\ do.png);
+  background-image: url(../images/to\ do.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_8 {
-  background-image: url(/images/CoursesE-Commerce.png);
+  background-image: url(../images/CoursesE-Commerce.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_9 {
-  background-image: url(/images/foodEcommerce.png);
+  background-image: url(../images/foodEcommerce.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_10 {
-  background-image: url(/images/book-store.png);
+  background-image: url(../images/book-store.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_11 {
-  background-image: url(/images/landscape.png);
+  background-image: url(../images/landscape.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_12 {
-  background-image: url(/images/ecommerce-app.png);
+  background-image: url(../images/ecommerce-app.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_13 {
-  background-image: url(/images/landing-page-kasper.png);
+  background-image: url(../images/landing-page-kasper.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_14 {
-  background-image: url(/images/travel.png);
+  background-image: url(../images/travel.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_15 {
-  background-image: url(/images/landing-page-agancy.png);
+  background-image: url(../images/landing-page-agancy.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_16 {
-  background-image: url(/images/crud-sys.png);
+  background-image: url(../images/crud-sys.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_17 {
-  background-image: url(/images/dashboard.png);
+  background-image: url(../images/dashboard.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_18 {
-  background-image: url(/images/funr-site.png);
+  background-image: url(../images/funr-site.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_19 {
-  background-image: url(/images/car-site.png);
+  background-image: url(../images/car-site.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .img__scroll_20 {
-  background-image: url(/images/cart.png);
+  background-image: url(../images/cart.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
