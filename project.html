@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ========== Css File ========== -->
+    <link rel="icon" href="./images/1.webp" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style_switcher.css" />
+    <!-- ========== Thems Switcher Style ========== -->
+    <link
+      rel="stylesheet"
+      href="./css/skins/color1.css"
+      class="colors__style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color2.css"
+      class="colors__style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color3.css"
+      class="colors__style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color4.css"
+      class="colors__style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color5.css"
+      class="colors__style"
+      title="color-5"
+      disabled
+    />
+    <!-- ========== Font Awsome File ========== -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- ========== Google Fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Protofolio</title>
+  </head>
+
+  <body>
+    <!-- ========== Start AsideBar ========== -->
+
+    <div class="main__body__container">
+      <div class="main__aside">
+        <div class="menu__bottom">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+          <a href="#"> <span>E</span>slam</a>
+        </div>
+        <ul class="ul__menu">
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house-chimney"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+          </li>
+          <li>
+            <a href="services.html"><i class="fa-solid fa-list"></i>Services</a>
+          </li>
+          <li>
+            <a href="protofolio.html"
+              ><i class="fa-solid fa-briefcase"></i>Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              ><i class="fa-solid fa-comments"></i>Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- ========== End AsideBar ========== -->
+
+      <!-- ========== Start Protofolio Page ========== -->
+
+      <div class="main__content__home">
+        <div class="main__container">
+          <div class="title">
+            <h2>Project Details</h2>
+          </div>
+          <section class="project_details_sec">
+            <h1 id="title"></h1>
+            <p class="project_summary" id="summary"></p>
+            <h2>Project Overview</h2>
+            <ul class="project_overview_list" id="description"></ul>
+            <h2>Technologies Used</h2>
+            <p class="project_technologies" id="stack"></p>
+          </section>
+        </div>
+      </div>
+      <!-- ========== Start Swicher Colors ========== -->
+
+      <div class="main__switcher__themes">
+        <div class="icone__terss icons-commons">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="icon__dark__light icons-commons">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+        <h4>colors</h4>
+        <div class="colors">
+          <span class="color__1" onclick="setactiveStyle('color-1')"></span>
+          <span class="color__2" onclick="setactiveStyle('color-2')"></span>
+          <span class="color__3" onclick="setactiveStyle('color-3')"></span>
+          <span class="color__4" onclick="setactiveStyle('color-4')"></span>
+          <span class="color__5" onclick="setactiveStyle('color-5')"></span>
+        </div>
+      </div>
+      <!-- ========== End Swicher Colors ========== -->
+      <!-- ========== End Protofolio Page ========== -->
+    </div>
+    <script>
+      const projects = [
+        {
+          id: "1",
+          title: "Courses E-Commerce",
+          summary:
+            " Full-stack learning platform using headless CMS, modern frontend technologies and secure payment integration",
+          description: `<li>
+                Developed a full-featured e-learning web application that allows
+                users to browse, purchase, and access educational content.
+              </li>
+              <li>
+                Designed a scalable and maintainable architecture using RESTful
+                APIs and environment configuration with .env files.
+              </li>
+              <li>
+                Built the UI using <strong>Next.js (App Router)</strong>,
+                <strong>Tailwind CSS</strong>, and <strong>HyperUI</strong> for
+                clean and responsive components.
+              </li>
+              <li>
+                Used <strong>Redux Toolkit</strong> for global state management
+                and <strong>Axios</strong> for HTTP communication.
+              </li>
+              <li>
+                Created a fully functional backend using
+                <strong>Strapi</strong> as a headless CMS.
+              </li>
+              <li>
+                Configured and connected to a
+                <strong>PostgreSQL</strong> database.
+              </li>
+              <li>
+                Implemented secure user authentication with
+                <strong>Clerk</strong>.
+              </li>
+              <li>
+                Integrated <strong>Stripe</strong> for real-time payment
+                processing and course purchases.
+              </li>
+              <li>
+                Used <strong>Cloudinary</strong> to manage and deliver media
+                files efficiently.
+              </li>
+              <li>
+                Deployed the backend (Strapi + DB) using
+                <strong>Railway</strong>, and the frontend on
+                <strong>Vercel</strong>.
+              </li>`,
+          stack:
+            "      Next.js, Tailwind CSS, HyperUI, Redux Toolkit, Axios, Strapi,Cloudinary, PostgreSQL, Stripe, Clerk, Vercel, Railway",
+        },
+        {
+          id: "2",
+          title: "Food E-Commerce",
+          summary:
+            " Full-stack online food ordering platform with cart and wishlist functionality",
+          description: `<li>
+          	Designed and developed a modern food e-commerce web app using React.js and Vite, providing fast performance and a smooth developer experience.
+              </li>
+              <li>
+              	Implemented Redux Toolkit for centralized and scalable state management of cart and wishlist actions.
+              </li>
+              <li>
+               	Integrated Strapi (headless CMS) as a backend to manage product data and serve RESTful APIs.
+              </li>
+              <li>
+               	Built dynamic product pages allowing users to add/remove items to cart, add/remove from wishlist, and adjust product quantity (increase/decrease).
+              </li>
+              <li>
+               	Used Axios to handle API requests and environment-based configuration for development and production.
+              </li>
+              <li>
+           	Deployed the backend (Strapi + PostgreSQL) using Railway, and hosted the frontend on Vercel.
+              </li>
+              <li>
+               Applied responsive design principles to ensure usability across mobile and desktop devices.
+              </li>
+           `,
+          stack:
+            "      React.js, Vite, Redux Toolkit, Axios, Strapi, Vercel, Railway",
+        },
+        {
+          id: "3",
+          title: "Book Store App",
+          summary:
+            " Responsive book management web application with state management and backend simulation",
+          description: `<li>
+                	Developed a responsive web application for managing a book collection using React.js, Redux Toolkit (RTK), and Redux Thunk to handle state and asynchronous logic efficiently.
+              </li>
+              <li>
+               	Implemented React-Toastify for dynamic user notifications, providing clear feedback on action success or failure based on backend server responses.
+              </li>
+              <li>
+               	Designed and integrated CRUD functionalities with a simulated backend using JSON Server, enabling users to add new books, view detailed information, and maintain an updated list.
+              </li>
+              <li>
+               	Applied best practices for error handling and UI responsiveness to enhance user experience and ensure application stability.
+              </li>
+            `,
+          stack:
+            "     React js, RTK, redux-thunk ,React-toastify ,  JSON Server ",
+        },
+        {
+          id: "4",
+          title: "Landscape Website",
+          summary:
+            "A fully responsive Arabic website developed for a landscaping company to showcase its services and garden design projects.",
+          description: `<li>
+             	Developed a fully responsive Arabic website dedicated to showcasing garden activities, designs, and landscaping services.
+              </li>
+              <li>
+             	Implemented core front-end technologies including HTML5, CSS3, and JavaScript to build semantic, accessible, and responsive pages compatible with all screen sizes.
+              </li>
+              <li>
+           	Integrated the Splide.js slider library to create smooth, customizable image carousels for gallery and promotional sections, enhancing user engagement and visual appeal.
+              </li>
+              <li>
+          	Designed and implemented multiple key pages:
+          <ul>
+            <li>   <strong>Home Page</strong>: Displayed core services and garden design highlights with engaging slider visuals and animations.</li>
+            <li><strong>About Page</strong>: Presented company background and expertise in garden landscaping.</li>
+            <li><strong>Gallery Page</strong>: Showcased image collections of garden projects and activities, using responsive sliders for smooth navigation.</li>
+            <li><strong>Contact Page</strong>: Provided users with contact forms and information to easily reach out for inquiries.</li>
+            
+            </ul>
+              </li>
+              <li>
+               	Ensured the site is fully RTL (right-to-left) compatible for Arabic content and optimized for performance across different devices and browsers.
+              </li>
+              <li>
+           	Used additional libraries and tools such as Bootstrap 5 for layout and grid system, FontAwesome for icons, and AOS (Animate On Scroll) for smooth animations enhancing user experience.
+              </li>
+             `,
+          stack:
+            "HTML, CSS, JS, bootstrap, responsive design, Google Fonts, Font Awesome, splideJS",
+        },
+        {
+          id: "5",
+          title: "	E-Commerce App",
+          summary:
+            "Responsive web store with local functionality and user management",
+          description: `<li>
+             	Developed a full-featured e-commerce website using HTML, CSS, JavaScript, and Bootstrap, focused on responsiveness and smooth UX.
+              </li>
+              <li>
+             		Implemented add to cart, remove from cart, clear cart, and quantity management (increase/decrease) functionalities using LocalStorage for persistent cart state.
+              </li>
+              <li>
+           	Included product search by name and category, along with filtering by size to enhance product discoverability.
+              </li>
+              <li>
+          		Created login and register pages, storing user credentials and session data securely in LocalStorage.
+              </li>
+              <li>
+              	Integrated Google Fonts and applied responsive layout techniques for seamless experience across devices
+              </li>
+             `,
+          stack:
+            "HTML, CSS, JS, bootstrap, responsive design, google fonts, Local Storage",
+        },
+        {
+          id: "6",
+          title: "Website Template – Landing Page",
+          summary:
+            "Multi-section static landing page for showcasing services and pricing",
+          description: `<li>
+             	Designed and developed a professional landing page using HTML, CSS, and JavaScript, focused on layout clarity, modern visuals, and mobile responsiveness.
+              </li>
+          
+              <li>
+          		Structured the site into key sections including:
+          <ul>
+            <li><strong>Hero section </strong>: with introduction and mission statement</li>
+            <li><strong>Services </strong>: section listing key features with clean icons </li>
+            <li><strong>Portfolio </strong>: grid for showcasing image categories (App, Web, Photography)</li>
+            <li><strong>About us, Skills, and Testimonials </strong>:to highlight team strengths and achievements</li>
+            <li><strong>Pricing plans  </strong>:with four tiers (Basic to Platinum)</li>
+            <li><strong>Contact section </strong>:with form and social links</li>
+            
+            </ul>
+              </li>
+              <li>
+               Implemented modern web design practices and clear navigation to ensure optimal user experience.
+              </li>
+              <li>
+           Used typography from Google Fonts and ensured full responsiveness across all screen sizes.
+              </li>
+             `,
+          stack:
+            "HTML, CSS, JS, bootstrap, responsive design, google fonts, Font awesome",
+        },
+        {
+          id: "7",
+          title: "Travel Website (React SPA)",
+          summary:
+            "A visually engaging single-page travel website built with modern React tooling to showcase destinations, activities, and packages.",
+          description: `<li>
+             		Developed a responsive single-page travel website using React.js and Vite for fast performance and modern development tooling.
+              </li>
+              <li>
+             		Integrated React Icons for enhanced UI, React Player for embedded video content, and React Scroll for smooth navigation between sections.
+              </li>
+              <li>
+           	Used Swiper.js to build a responsive, looped image 
+              </li>
+              <li>
+          		Website is structured into four main sections:
+          <ul>
+            <li><strong>Destinations </strong>: showcases travel locations.</li>
+            <li><strong>Our Activities </strong>: features an embedded promotional video.</li>
+            <li><strong>Trips </strong>:lists travel packages or locations.</li>
+            <li><strong>Who We Are </strong>: includes a continuous slider with team or brand visuals.</li>
+            
+            </ul>
+              </li>
+             `,
+          stack:
+            "React js, responsive design, React-icons,React-player, React-scrol, Swiper library",
+        },
+        {
+          id: "8",
+          title: "Creative Agency Template",
+          summary:
+            "A modern, fully responsive single-page website built from scratch to showcase a creative agency's services, portfolio, and contact information.",
+          description: `<li>
+             		Developed a static, mobile-first agency website using HTML5, CSS3, and Vanilla JavaScript, with a focus on clean structure, visual appeal, and user experience.
+              </li>
+              <li>
+             	Designed and implemented key sections including Services, Portfolio, About, and Contact, all integrated into a smooth-scrolling single-page layout.
+              </li>
+              <li>
+          Used Font Awesome for scalable icons, Google Fonts for custom typography, and a Normalize.css file to ensure consistent styling across browsers.
+              </li>
+              <li>
+         Enhanced layout and accessibility with semantic HTML and responsive CSS techniques to ensure compatibility on all device sizes.
+              </li>
+              <li>
+         Built a minimalist and visually engaging front end to reflect the creative identity of the agency.
+              </li>
+              <li>
+          		Website is structured into four main sections:
+          <ul>
+            <li><strong>Services  </strong>:Describes core offerings – Graphic Design, UI/UX, Web Design, Web Development.</li>
+            <li><strong>Portfolio  </strong>:  Highlights creative project examples using modular and repeatable design blocks.</li>
+            <li><strong>About  </strong>: Brief company background with supporting text to build trust and identity.</li>
+            <li><strong>Contact  </strong>: Contact email and social media links for outreach.</li>
+            
+            </ul>
+              </li>
+             `,
+          stack:
+            "HTML, CSS Font Awesome , Google Fonts , Normalize File , JavaScript , Responsive Web Page",
+        },
+        {
+          id: "7",
+          title: "Travel Website (React SPA)",
+          summary:
+            "A visually engaging single-page travel website built with modern React tooling to showcase destinations, activities, and packages.",
+          description: `<li>
+             		Developed a responsive single-page travel website using React.js and Vite for fast performance and modern development tooling.
+              </li>
+              <li>
+             		Integrated React Icons for enhanced UI, React Player for embedded video content, and React Scroll for smooth navigation between sections.
+              </li>
+              <li>
+           	Used Swiper.js to build a responsive, looped image 
+              </li>
+              <li>
+          		Website is structured into four main sections:
+          <ul>
+            <li><strong>Destinations </strong>: showcases travel locations.</li>
+            <li><strong>Our Activities </strong>: features an embedded promotional video.</li>
+            <li><strong>Trips </strong>:lists travel packages or locations.</li>
+            <li><strong>Who We Are </strong>: includes a continuous slider with team or brand visuals.</li>
+            
+            </ul>
+              </li>
+             `,
+          stack:
+            "React js, responsive design, React-icons,React-player, React-scrol, Swiper library",
+        },
+      ];
+
+      const params = new URLSearchParams(window.location.search);
+      const projectId = params.get("id");
+      const project = projects.find((p) => p.id === projectId);
+
+      if (project) {
+        document.getElementById("title").innerHTML = project.title;
+        document.getElementById("summary").innerHTML = project.summary;
+        document.getElementById("description").innerHTML = project.description;
+        document.getElementById("stack").innerHTML = project.stack;
+      } else {
+        document.getElementById("project-container").innerHTML =
+          "<p>Project not found.</p>";
+      }
+    </script>
+    <script src="./java.js"></script>
+  </body>
+</html>

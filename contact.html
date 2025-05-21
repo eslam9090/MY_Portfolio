@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========== Css File ========== -->
+    <link rel="icon" href="./images/1.webp">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style_switcher.css">
+    <!-- ========== Thems Switcher Style ========== -->
+    <link rel="stylesheet" href="./css/skins/color1.css" class="colors__style" title="color-1" disabled>
+    <link rel="stylesheet" href="./css/skins/color2.css" class="colors__style" title="color-2" disabled>
+    <link rel="stylesheet" href="./css/skins/color3.css" class="colors__style" title="color-3" disabled>
+    <link rel="stylesheet" href="./css/skins/color4.css" class="colors__style" title="color-4" disabled>
+    <link rel="stylesheet" href="./css/skins/color5.css" class="colors__style" title="color-5" disabled>
+    <!-- ========== Font Awsome File ========== -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- ========== Google Fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400&display=swap"
+        rel="stylesheet">
+    <title>My Protofolio</title>
+</head>
+
+<body>
+    <!-- ========== Start AsideBar ========== -->
+
+    <div class="main__body__container">
+        <div class="main__aside">
+            <div class="menu__bottom">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="#"> <span>E</span>slam</a>
+            </div>
+            <ul class="ul__menu">
+                <li><a href="index.html"> <i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-user"></i>About</a></li>
+                <li><a href="services.html"><i class="fa-solid fa-list"></i>Services</a></li>
+                <li><a href="protofolio.html"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!-- ========== End AsideBar ========== -->
+
+        <!-- ========== Start About Page ========== -->
+
+        <div class="main__content__home">
+            <div class="main__container">
+                <div class="title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact__top__content">
+                    <div class="content__title">
+                        <h2>Have You Any Qestions ? </h2>
+                        <h4>I'am At Your Service</h4>
+                    </div>
+                    <div class="contact__icons">
+                        <div class="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <h4>Call Me On</h4>
+                            <a href="phone:01212268144">01212268144</a>
+                        </div>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4>Location</h4>
+                            <p>Egypt-Giza-Fisal</p>
+                        </div>
+                        <div class="mail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h4>Email</h4>
+                            <a href="mailto:eslammyaakoub7090@gmail.com">eslammyaakoub7090@gmail.com</a>
+                        </div>
+                        <div class="site">
+                            <i class="fa-solid fa-earth-europe"></i>
+                            <h4>Website</h4>
+                            <a href="https://dddddd.com">https://dddddd.com</a>
+                        </div>
+                    </div>
+                    <div class="content__title section_margin-top">
+                        <h2>Send Me An Email </h2>
+                        <h4>I'am Very Responsive To Messages</h4>
+                    </div>
+                </div>
+                <form class="form__content section_margin-top" 
+                action="https://formspree.io/f/xrgveand"
+                method="POST"
+              >
+              <div class="first__inputs__name">
+                <input class="input__common" type="text" placeholder="Name">
+                <input   class="input__common" type="email"  placeholder="Email" >
+
+            </div>
+            <div class="third__input__textarea">
+               
+                <textarea class="input__common" rows="7"  name="message"></textarea>
+            </div>
+                <!-- your other form fields go here -->
+                <div class="div1">
+                <button  class="btn" type="submit">Send</button>
+                 </div>
+              </form>
+
+            </div>
+        </div>
+        <!-- ========== End About Page ========== -->
+
+        <!-- ========== Start Swicher Colors ========== -->
+
+        <div class="main__switcher__themes">
+            <div class="icone__terss icons-commons">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="icon__dark__light icons-commons">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <h4>colors</h4>
+            <div class="colors">
+                <span class="color__1" onclick="setactiveStyle('color-1')"></span>
+                <span class="color__2" onclick="setactiveStyle('color-2')"></span>
+                <span class="color__3" onclick="setactiveStyle('color-3')"></span>
+                <span class="color__4" onclick="setactiveStyle('color-4')"></span>
+                <span class="color__5" onclick="setactiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- ========== End Swicher Colors ========== -->
+        <script src="./java.js"></script>
+</body>
+
+</html>

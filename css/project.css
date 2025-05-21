@@ -1,0 +1,37 @@
+body {
+  color: white;
+}
+.project_details_sec h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--themes-color-1);
+  margin-top: 150px;
+}
+.project_details_sec h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--themes-color-1);
+  margin-top: 50px;
+}
+.project_summary {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.project_overview_list {
+  list-style: circle !important;
+  padding: 0;
+}
+.project_overview_list li {
+  list-style: square;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.project_technologies {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-bottom: 50px;
+  margin: 0;
+}

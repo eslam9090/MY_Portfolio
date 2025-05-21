@@ -1,0 +1,554 @@
+:root {
+  --themes-color-1: #ff4235;
+  --themes-color-2: #ff6f04;
+  --themes-color-3: #249483;
+  --themes-color-4: #0b52c0;
+  --themes-color-5: #ff56b8;
+  --body-color: #161516;
+  --asid-color: #232123;
+  --text-color: #faffff;
+  --border-color: #2b2b2b;
+  --asid-color-input: #232123;
+}
+
+.dark {
+  --text-color: #161516;
+  --body-color: #f1f7f7;
+  --asid-color: #faffff;
+  --border-color: #faffff;
+}
+
+.content__title {
+  text-align: center;
+}
+
+.content__title h2 {
+  color: var(--themes-color-1);
+}
+
+.content__title h4 {
+  color: var(--text-color);
+}
+
+.contact__icons {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact__icons i {
+  color: var(--themes-color-1);
+  font-size: 25px;
+}
+
+.contact__icons h4,
+p,
+a {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+.main__content__home {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  padding-left: 270px;
+  animation: scaleAnmi 1s ease-in-out forwards;
+ 
+}
+
+
+@keyframes scaleAnmi {
+  from {
+  left: 100vw;
+
+  }
+  to{
+    left: 0;
+  }
+}
+.main__content__home {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  padding-left: 270px;
+  animation: scaleAnmi 1s ease-in-out forwards;
+ 
+}
+.main__content__home .active {
+  z-index: 2;
+  animation: scaleAnmi 1s ease;
+}
+@keyframes scaleAnmi {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+.first__inputs__name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input__common {
+  background-color: var(--asid-color-input);
+  outline: none;
+  border: 2px solid var(--border-color);
+  padding: 13px;
+  border-radius: 20px;
+  width: 99%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.first__inputs__name input {
+  margin-right: 10px;
+}
+
+.div1 {
+  padding: 20px 0;
+}
+
+.btn {
+  text-transform: uppercase;
+  background-color: var(--themes-color-1);
+  padding: 15px 50px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 4px 4px 6px 3px rgba(80, 42, 42, 0.596);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+@media screen and (max-width: 480px){
+  .main__content__home {
+    padding-left: 0px;
+  }
+  .menu__bottom {
+    left: 30px;
+    font-size: 30px;
+    padding: 6px;
+    display: block;
+  }
+  .menu__bottom i {
+    font-size: 35px;
+  }
+  .icone__terss {
+    position: absolute;
+    right: 100%;
+    top: -15px !important;
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 25px !important;
+}
+.icon__dark__light {
+  font-size: 25px !important;
+    position: absolute;
+    right: 100%;
+    top: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+  .main__switcher__themes .colors {
+    height: 45px !important;
+  }
+  .main__switcher__themes h4 {
+    font-weight: bold;
+  }
+  .main-btn .btn-text {
+    font-size: 20px;
+  }
+
+  .main-btn .btn-icon {
+    padding: 20px;
+    font-size: 25px;
+  }
+  .logo a {
+    font-size: 40px;
+  }
+  .ul__menu li a {
+    font-size: 20px;
+  }
+  .ul__menu li {
+    margin-bottom: 40px;
+  }
+  .main__aside {
+    left: -270px;
+    z-index: 1000;
+  }
+  .contact__icons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    margin-top: 100px;
+  }
+  .first__inputs__name{
+    display: flex;
+    flex-direction: column;
+  }
+  
+.content__title h2 {
+  font-size: 30px;
+}
+
+.content__title h4 {
+  font-size: 20px;
+
+}
+
+.contact__icons i {
+  color: var(--themes-color-1);
+  font-size: 45px;
+}
+
+.contact__icons h4,
+p,
+a {
+  color: var(--text-color);
+  font-size: 19px;
+  font-weight: 500;
+}
+.input__common {
+  padding: 20px;
+  font-size: 20px;
+}
+.div1 button{
+  font-size: 22px;
+
+}
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+  .main__content__home {
+    padding-left: 0px;
+  }
+  .menu__bottom {
+    left: 30px;
+    font-size: 30px;
+    padding: 6px;
+    display: block;
+  }
+  .menu__bottom i {
+    font-size: 35px;
+  }
+  .icone__terss {
+    position: absolute;
+    right: 100%;
+    top: -15px !important;
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 25px;
+}
+.icon__dark__light {
+    font-size: 25px !important;
+    position: absolute;
+    right: 100%;
+    top: 50px;
+  
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+  .main__switcher__themes .colors {
+    height: 45px !important;
+  }
+  .main__switcher__themes h4 {
+    font-weight: bold;
+  }
+  .main-btn .btn-text {
+    font-size: 20px;
+  }
+
+  .main-btn .btn-icon {
+    padding: 20px;
+    font-size: 25px;
+  }
+  .logo a {
+    font-size: 40px;
+  }
+  .ul__menu li a {
+    font-size: 24px;
+  }
+  .ul__menu li {
+    margin-bottom: 40px;
+  }
+  .main__aside {
+    left: -270px;
+    z-index: 1000;
+  }
+  .contact__icons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    margin-top: 100px;
+  }
+  .first__inputs__name{
+    display: flex;
+    flex-direction: column;
+  }
+  
+.content__title h2 {
+  font-size: 40px;
+}
+
+.content__title h4 {
+  font-size: 20px;
+
+}
+
+.contact__icons i {
+  color: var(--themes-color-1);
+  font-size: 50px;
+}
+
+.contact__icons h4,
+p,
+a {
+  color: var(--text-color);
+  font-size: 25px;
+  font-weight: 500;
+}
+.input__common {
+  padding: 25px;
+  font-size: 25px;
+}
+.div1 button{
+  font-size: 25px;
+
+}
+}
+@media screen and (min-width: 767px) and (max-width: 992px){
+  .main__content__home {
+    padding-left: 0px;
+  }
+  .menu__bottom {
+    left: 30px;
+    font-size: 30px;
+    padding: 6px;
+    display: block;
+  }
+  .menu__bottom i {
+    font-size: 35px;
+  }
+  .icone__terss {
+    position: absolute;
+    right: 100%;
+    top: -15px !important;
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 35px !important;
+
+}
+.icon__dark__light {
+    font-size: 35px !important;
+    position: absolute;
+    right: 100%;
+    top: 50px;
+  
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+  .main__switcher__themes .colors {
+    height: 45px !important;
+  }
+  .main__switcher__themes h4 {
+    font-weight: bold;
+  }
+  .main-btn .btn-text {
+    font-size: 20px;
+  }
+
+  .main-btn .btn-icon {
+    padding: 20px;
+    font-size: 25px;
+  }
+  .logo a {
+    font-size: 40px;
+  }
+  .ul__menu li a {
+    font-size: 24px;
+  }
+  .ul__menu li {
+    margin-bottom: 40px;
+  }
+  .main__aside {
+    left: -270px;
+    z-index: 1000;
+  }
+  .contact__icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    margin-top: 100px;
+  }
+  .first__inputs__name{
+    display: flex;
+    flex-direction: column;
+  }
+  
+.content__title h2 {
+  font-size: 45px;
+}
+
+.content__title h4 {
+  font-size: 25px;
+
+}
+
+.contact__icons i {
+  color: var(--themes-color-1);
+  font-size: 50px;
+}
+
+.contact__icons h4,
+p,
+a {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.input__common {
+  padding: 27px;
+  font-size: 25px;
+}
+.div1 button{
+  font-size: 25px;
+
+}
+}
+@media screen and (min-width: 993px) and (max-width: 1024px){
+  .icone__terss {
+    position: absolute;
+    right: 100%;
+    top: -15px !important;
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 37px !important;
+
+}
+.icon__dark__light {
+  font-size: 37px !important;
+    position: absolute;
+    right: 100%;
+    top: 50px;
+  
+    margin-right: 50px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+.ul__menu li a {
+  font-size: 25px;
+}
+.main__content__home {
+  padding-left: 0px;
+}
+.menu__bottom {
+  left: 30px;
+  font-size: 30px;
+  padding: 6px;
+  display: block ;
+}
+.menu__bottom i {
+  font-size: 35px;
+}
+.icone__terss {
+  position: absolute;
+  right: 100%;
+  top: -15px !important;
+  margin-right: 50px;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 35px !important;
+
+}
+.icon__dark__light {
+  font-size: 35px !important;
+  position: absolute;
+  right: 100%;
+  top: 50px;
+
+  margin-right: 50px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+.main__switcher__themes .colors {
+  height: 45px !important;
+}
+.main__switcher__themes h4 {
+  font-weight: bold;
+}
+.main-btn .btn-text {
+  font-size: 20px;
+}
+
+.main-btn .btn-icon {
+  padding: 20px;
+  font-size: 25px;
+}
+.logo a {
+  font-size: 40px;
+}
+.ul__menu li a {
+  font-size: 24px;
+}
+.ul__menu li {
+  margin-bottom: 40px;
+}
+.main__aside {
+  left: -270px;
+  z-index: 1000;
+}
+.contact__icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-top: 100px;
+}
+.first__inputs__name{
+  display: flex;
+  flex-direction: column;
+}
+
+.content__title h2 {
+font-size: 45px;
+}
+
+.content__title h4 {
+font-size: 25px;
+
+}
+
+.contact__icons i {
+color: var(--themes-color-1);
+font-size: 50px;
+}
+
+.contact__icons h4,
+p,
+a {
+color: var(--text-color);
+font-size: 20px;
+font-weight: 500;
+}
+.input__common {
+padding: 27px;
+font-size: 25px;
+}
+.div1 button{
+font-size: 25px;
+
+}
+}
