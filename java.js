@@ -1,11 +1,3 @@
-// const gf = document.querySelector(".gf");
-// const gfg = document.querySelector(".gfg");
-
-// gf.addEventListener("click", (eo) => {
-//     eo.preventDefault();
-//     gfg.classList.add("active");
-// })
-
 // <!-- ========== Start Active Color On Nav Link ========== -->
 const ul__menu = document.querySelector(".ul__menu"),
   navList = ul__menu.querySelectorAll("li"),
@@ -14,9 +6,7 @@ console.log(totalNavList);
 
 for (let i = 0; i < totalNavList; i++) {
   const a = navList[i].querySelector("a");
-  a.addEventListener("click", () => {
-    console.log(this);
-
+  a.addEventListener("click", function () {
     for (let j = 0; j < totalNavList; j++) {
       navList[j].querySelector("a").classList.remove("activated");
     }
@@ -24,21 +14,6 @@ for (let i = 0; i < totalNavList; i++) {
   });
 }
 // console.log(ul__menu);
-
-// ul__menu.forEach((el) => {
-//   el.addEventListener("click", (e) => {
-//     console.log(this.el);
-//     ul__menu.forEach((act) => act.classList.remove("activated"));
-//     this.classList.add("activated");
-//   });
-// });
-
-// function resetLinks() {
-//   ul__menu.forEach((act) => {
-//     act.classList.remove("activated");
-//   });
-// }
-// <!-- ========== End Active Color On Nav Link ========== -->
 
 // <!-- ========== Start Switcher Colors ========== -->
 
@@ -89,8 +64,6 @@ icon__dark__light.addEventListener("click", (eo) => {
 });
 // <!-- ========== End Light And Dark Mood  ========== -->
 
-// <!-- ==========  End Typing  ========== -->
-
 // <!-- ==========  Start Bars Toggel  ========== -->
 const menu__bottom = document.querySelector(".menu__bottom");
 const main__aside = document.querySelector(".main__aside");
@@ -100,24 +73,7 @@ menu__bottom.addEventListener("click", (e) => {
   menu__bottom.classList.toggle("left_button_bars");
 });
 
-// <!-- ==========  End Bars Toggel  ========== -->
-
-// <!-- ==========  Certificate style ========== -->
-
-// document.querySelectorAll(".Image_Container img").forEach((image) => {
-//   image.onclick = () => {
-//     console.log("clicked");
-//     document.querySelector(".popup_image").style.display = "block";
-//     document.querySelector(".popup_image img").src = image.getAttribute("src");
-//   };
-// });
-// document.querySelector(".popup_image span").onclick = () => {
-//   document.querySelector(".popup_image").style.display = "none";
-// };
-
 const images = [...document.querySelectorAll(".image")];
-
-// popup
 
 const popup = document.querySelector(".popup");
 const closeBtn = document.querySelector(".close-btn");
@@ -158,11 +114,4 @@ rightArrow.addEventListener("click", () => {
   if (index < images.length - 1) {
     updateImage(index + 1);
   }
-});
-// <!-- ==========  Start Typing  ========== -->
-var typed = new Typed(".typing", {
-  strings: ["Front End Developer", "Web Designer", "Web Developer"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true,
 });
